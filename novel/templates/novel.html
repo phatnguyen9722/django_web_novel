@@ -1,0 +1,8 @@
+<h1>Authors</h1>
+
+{% for novel in novels %}
+   {{ MEDIA_URL }}
+ 
+    {% comment %} <img src="media/{{ novel.image }}" alt="Cover Image"> {% endcomment %}
+    <a href="#">{{ novel.story_name }}</a>
+{% endfor %}
