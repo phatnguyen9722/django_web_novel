@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ chapter.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .chapter-content {
+            white-space: pre-wrap; /* Preserve newlines and whitespace */
+        }
+        .chapter-content p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ chapter.title }}</h1>
+    <p>{{ chapter.content }}</p>
+    {% if chapter.image %}
+    <img src="{{ chapter.image.url }}" alt="{{ chapter.title }}">
+    {% endif %}
+</body>
+</html>
